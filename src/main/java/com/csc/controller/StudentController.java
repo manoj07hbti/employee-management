@@ -3,6 +3,7 @@ package com.csc.controller;
 
 
 import com.csc.model.Student;
+import com.csc.model.UserAccount;
 import com.csc.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -83,5 +84,14 @@ public class StudentController {
         model.addAttribute("listStudents", listStudents);
         return "student_index";
     }
+
+   /* @GetMapping("/register")
+    public String register(Model model) {
+        UserAccount userAccount = new UserAccount();
+        model.addAttribute("userAccount", userAccount);
+
+        return "security/register";
+    }
+*/
 
 }

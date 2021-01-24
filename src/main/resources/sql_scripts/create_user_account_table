@@ -1,0 +1,9 @@
+CREATE TABLE  "user_accounts" (
+	"user_id" NUMBER(19,0) NOT NULL ENABLE,
+	"username" VARCHAR2(255 CHAR) NOT NULL,
+	"email" VARCHAR2(255 CHAR) NOT NULL,
+	"password" VARCHAR2(255 CHAR) NOT NULL,
+	"role" VARCHAR2(255 CHAR),
+	"enabled" VARCHAR2(255 CHAR) NOT NULL,
+    PRIMARY KEY ("user_id") ENABLE
+)
